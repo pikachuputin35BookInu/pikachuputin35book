@@ -1,0 +1,387 @@
+<html>
+    
+<head>
+        <!-- HTML Meta Tags -->
+        <meta charset="utf-8">
+        <title>PikachuPutin35BookInu (Ticker:PP35)</title>
+
+        <!-- <link rel="icon" href="/favicon.ico"> -->
+        <link rel="shortcut icon" href="pika.jpg" />
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+                cursor: url("rat1.png"), crosshair !important;
+            }
+
+            body {
+                overflow-x: hidden; /* Prevents horizontal scrolling */
+                margin: 0;
+                padding: 0;
+                color: white;
+                background-color: #000; /* Example background */
+                font-family: 'Courier New', Courier, monospace; /* Retro look */
+            }
+
+            .trail {
+                position: absolute;
+                width: 5px; /* Smaller size */
+                height: 5px; /* Smaller size */
+                border-radius: 50%;
+                pointer-events: none; /* Ensure the trail doesn't interfere with other elements */
+                z-index: 1000; /* Ensure it's above other content */
+            }
+            
+            .content-area {
+                margin-left: 20%;
+                margin-right: 20%;
+                background-color: rgba(0, 0, 0, 0.829);
+            }
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .img-background {
+                background-image: url("background.gif");
+                background-size: cover;
+                background-repeat: repeat-y;
+                background-attachment: fixed;
+                height: 100%;
+                width: 100%;
+            }
+            .alpha-darken-bg {
+                background-color: rgba(70, 30, 30, 0.829);
+            }
+            a {
+                background-color:rgba(255, 255, 255, 1);
+            }
+            .header-img {
+                max-height: 18px;
+            }
+            div.content-area {
+                padding: 1%;
+            }
+            .video-responsive{
+                overflow:hidden;
+                padding-bottom:56.25%;
+                position:relative;
+                height:0;
+            }
+            .video-responsive iframe{
+                left:0;
+                top:0;
+                height:100%;
+                width:100%;
+                position:absolute;
+            }
+            .top-nav {
+                font-weight: bold;
+            }
+            #PikachuPutin35BookInu {
+                background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-top:-1em;
+            }
+
+                    
+            h1#PikachuPutin35BookInu {
+                color: #00FFFF; /* Cyan for better readability */
+                font-size: 28px; /* Adjusted font size for emphasis */
+                padding: 15px; /* Adjusted padding */
+                border-bottom: 2px solid #FFD700; /* Simplified border style for clarity */
+                margin-bottom: 20px; /* Adjusted spacing */
+                text-align: center; /* Center alignment for prominence */
+                text-shadow: 2px 2px #FF4500; /* Simplified text shadow for legibility */
+            }
+
+            :root {
+                --width: 300px;
+                --x-speed: 13s;
+                --y-speed: 7s;
+                --transition-speed: 2.2s;
+            }
+
+            .el { 
+                /* width: var(--width); */
+                /* height: var(--width); */
+                height: 50px;   
+                z-index: 20;
+            }
+
+            .el-wrap {
+                position: absolute; /* This makes sure it's positioned within .animation-container */
+            }
+
+            .x {
+                animation: x var(--x-speed) linear infinite alternate;
+            }
+            .y {
+                animation: y var(--y-speed) linear infinite alternate;
+            }
+
+            @keyframes x {
+            100% {
+                transform: translateX(calc(100vw - var(--width)));
+            }
+            }
+            @keyframes y {
+            100% {
+                transform: translateY(calc(100vh - var(--width)));
+            }
+            }
+
+
+            button {
+                background-image: linear-gradient(to right, #015ad1, #1748bc);
+                border-radius: 50px;
+                border: 0;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+                color: #fff;
+                cursor: pointer;
+                padding: 10px 25px;
+                transition: all 0.1s ease-in-out;
+            }
+
+            button.redBtn{
+                background-image: linear-gradient(to right, #d10101, #bc1717);
+                border-radius: 50px;
+                border: 0;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+                color: #fff;
+                cursor: pointer;
+                padding: 10px 25px;
+                transition: all 0.1s ease-in-out;
+            }
+
+            button:active {
+                opacity: 0.8;
+            }
+
+            button:focus {
+                outline: none;
+                box-shadow: 0 0 1px 2px #015ad1;
+            }
+
+
+            .modal-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            
+            .modal {
+                background-color: #111;
+                color: #fff;
+                font-family: 'Consolas', 'Monaco', monospace;
+                padding: 20px;
+                border-radius: 5px;
+                max-width: 80%; /* Adjust to ensure modal fits content */
+                box-sizing: border-box;
+            }
+            
+            .modal-header h3 {
+                margin: 0;
+            }
+
+            h3 {
+                background-color: #1a1a1a; /* Slightly lighter background for the text block */
+                color: #FFD700; /* Golden text color for emphasis */
+                font-size: 20px; /* Slightly larger font size for readability */
+                padding: 20px; /* Padding inside the text block */
+                border: 2px dashed #FF4500; /* Orange dashed border for a vibrant contrast */
+                box-shadow: 0 0 10px #FF4500; /* Soft glow effect */
+                text-shadow: 0 0 5px #FF0000, 0 0 10px #FFA500; /* Red and orange text shadow for a glowing effect */
+            }
+            
+            .content-with-images {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .vlad-image, .char, .sound-wave {
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: auto;
+                max-width: 33%; /* Adjust to fit within the modal */
+                height: auto;
+            }
+            
+            /* Ensure images do not exceed a maximum size */
+            .vlad-image, .char {
+                max-height: 200px; /* Adjust based on your modal size */
+            }
+            
+            .sound-wave {
+                max-height: 150px; /* Sound waves are typically shorter */
+            }
+            
+            .modal-footer {
+                text-align: center;
+            }
+
+            .hero-container {
+                display: flex;
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                height: 40vh; /* Full viewport height */
+                padding: 0px; /* To prevent the image from touching the edges */
+                box-sizing: border-box;
+                margin-bottom: 40px;
+                
+            }
+    
+            .hero-image {
+                max-width: 100%; /* Allows the image to scale down if the viewport width is less */
+                max-height: 45vh; /* Adjusts the image's maximum height to be less than the viewport height */
+                width: auto; /* Maintain aspect ratio */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+            .button:focus, .button-red:focus, .button-blue:focus {
+                outline: none;
+                box-shadow: 0 0 1px 2px #015ad1; /* Standard focus style for accessibility */
+            }
+            
+            #closeModalBtn, #redirectModalBtn {
+                cursor: pointer;
+                padding: 10px;
+                margin: 5px;
+                border: none;
+                border-radius: 5px;
+                font-weight: bold;
+                background-color: #444; /* Neutral color, adjust as needed */
+                color: #fff;
+            }
+            
+            .redBtn, .blueBtn {
+                background-color: #444; /* Adjust for both buttons for consistency */
+                color: #fff;
+            }
+            
+             img.centered {
+                max-width: 100%; /* Make sure the image is responsive */
+                height: auto; /* Maintain aspect ratio */
+                display: block; /* Treat the image as block-level to apply auto margins */
+                margin: auto; /* Center the image horizontally */
+            }       
+
+@font-face { 
+    font-family: "PokemonSolid"; src: url(PokemonSolid.ttf); 
+}
+
+marquee {
+    font-family: "PokemonSolid", sans-serif;
+}
+
+#PikachuPutin35BookInu {
+    font-family: "PokemonSolid";
+    font-weight: 100;
+}
+
+.addy{
+    color:turquoise;
+}
+        </style>
+    </head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const colors = ["#FF0000", "#FFFF00", "#FF00FF", "#00FFFF", "#0000FF"]; // More colorful options
+    
+            function addTrailElement(x, y) {
+                const el = document.createElement('div');
+                el.className = 'trail';
+                el.style.left = `${x - 2.5}px`; // Center the element based on its new smaller size
+                el.style.top = `${y - 2.5}px`; // Center the element based on its new smaller size
+                el.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]; // Random color selection
+    
+                document.body.appendChild(el);
+    
+                setTimeout(() => {
+                    document.body.removeChild(el);
+                }, 600); // Slightly longer duration for visibility
+            }
+    
+            document.addEventListener('mousemove', (e) => {
+                const x = e.clientX;
+                const y = e.clientY;
+                addTrailElement(x, y);
+            });
+        });
+    </script>
+
+
+    <body class="img-background">
+        <div class="modal-wrapper" id="modal">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3>Vlad wants to talk to you.</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="content-with-images">
+                        <img src="vlad.jpg" alt="Vlad" class="vlad-image" />
+                        <img src="sound-wave.gif" alt="Sound Wave" class="sound-wave" />
+                        <img src="pika.jpg" alt="You" class="char" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="redBtn" id="talk" onclick="document.getElementById('modalSound').play();">Talk</button>
+                    <button class="redBtn" id="closeModalBtn" onclick="document.getElementById('mainSound').play(); document.getElementById('modal').style.display='none';">Continue</button>
+                    <button class="blueBtn" id="redirectModalBtn" onclick="window.location.href='https://youtube.com/watch?v=Oktrp8Nterg';">Leave</button>
+                </div>
+                <audio id="modalSound" src="callreceived.mp3"></audio>
+                <audio id="mainSound" src="bunchofnormies.mp3"></audio>
+            </div>
+        </div>
+        
+        
+        <div style="width:100%">
+            <div class="header">
+                <div class="el-wrap x">
+                    <img class="el y" src="bookPepe.webp"></img>
+                </div>
+                <div class="content-area">
+
+        
+                    
+                        <div class="image-container">
+                        <img src="tokName.png" alt="Centered Image" class="centered">
+                        </div>
+                    </nav>
+                    <hr style="height:11px;border-width:0;color:rgb(255 204 1);background-color:rgb(255 204 1);">
+                    <h1 id="PikachuPutin35BookInu" >It's time to secure the future of the motherland (Ticker:PP35)</h1>
+                    <p class="ca"> CA: <span class="addy">TBC</span> </p>
+                    <div class="hero-container">
+                        <img src="pikaChart.gif" alt="Pika Chart" class="hero-image">
+                    </div>
+                    <marquee direction="right" scrollamount="20"><img height="60px"src="putincatrocket.gif">
+                    </marquee>
+
+                    <div>
+                        <h3 style="margin-bottom: 20px">In the shadowy glow of a single desk lamp, Vladimir Putin dialed a number known to only a select few. On the other end, a familiar crackle of electricity answered—Pikachu, the unexpected guardian of a digital empire.
+        
+                            "Comrade Pikachu," Putin began, his voice low and serious, "it's time to secure our future. I need you to acquire the Genesis Token."
+                            </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        
+
+</script>
+
+
+
+    </body>
+</html>
